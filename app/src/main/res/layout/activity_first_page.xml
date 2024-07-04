@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".first_page"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    >
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="400dp"
+        android:layout_height="448dp"
+        android:layout_gravity="top"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/job"
+        app:lottie_url="REPLACE_JSON_URL" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discover Your\nDream Job here"
+            android:textSize="30sp"
+            android:textColor="#1F41BB"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore of the existing job role based on your\ninterest and study major"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="70dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/design"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="Login"
+                android:textSize="20sp"
+                app:backgroundTint="@null"
+                android:id="@+id/btn_one"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="Register"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:backgroundTint="@null"
+                android:id="@+id/btn_two"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
